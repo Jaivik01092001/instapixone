@@ -107,7 +107,7 @@ const HITSteps = [
     description:
       "Instantly Bok An Appoinment With Your Desired Photographer      ",
     ctaText: "Get Started",
-    image: find,
+    image: book,
     arrow: arrow,
   },
   {
@@ -115,7 +115,7 @@ const HITSteps = [
     description:
       "With Our Fast, Efficient, Service, Photo Are Delivered On Site, Saving Time And Money While Showcasing The Property In The Best Possible Light      ",
     ctaText: "Get Started",
-    image: find,
+    image: hdr,
     arrow: arrow,
   },
 
