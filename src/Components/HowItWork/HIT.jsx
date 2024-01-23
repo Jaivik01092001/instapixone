@@ -1,3 +1,89 @@
+// import React from "react";
+// import "./HIT.css";
+// import hitmockup from "../../Assets/mokupHowItWork.png";
+// import find from "../../Assets/findphotographer.png";
+// import book from "../../Assets/bookphotographer.png";
+// import hdr from "../../Assets/receivehdrphoto.png";
+// import arrow from "../../Assets/arrow.png";
+// import { motion } from "framer-motion";
+
+// const HIT = () => {
+//   return (
+//     <>
+//       <div className="hitcontainer" id="ourworks">
+//         <div className="overflow-x-hidden">
+//           <motion.div
+//             initial={{ opacity: 0, x: 100 }}
+//             whileInView={{ opacity: 1, x: 0 }}
+//             transition={{ duration: 1, ease: "easeOut" }}
+//             viewport={{ once: true }}
+//             className="hittop"
+//           >
+//             How It Works
+//           </motion.div>
+//         </div>
+//         <div className="hitbottomcontainer flex">
+//           <div className="layoutsetting">
+//             <div className="left">
+//               <img src={hitmockup} />
+//             </div>
+//             <div className="right mt-96">
+//               <div className="content">
+//                 <div className="findphototgraphercontainer">
+//                   <div className="bg-blue-200 w-fit p-4 rounded-md max-h-20 max-w-20">
+//                     <img className="max-w-[80%]" src={find} alt="" />
+//                   </div>
+//                   <div className="hittitle">Find Photographers</div>
+//                   <div className="hitdesc">
+//                     Search Our Nation Wide Marketplace Of Qualified Real Estate
+//                     Photographerscusing Our Ai Powered Capture And Editing
+//                     Solution.
+//                   </div>
+//                   <div className="hitcta flex items-center">
+//                     <div className="ctatext">Get Started</div>
+//                     <img className="ml-4 object-contain" src={arrow} alt="" />
+//                   </div>
+//                 </div>
+//                 <div className="findphototgraphercontainer">
+//                   <div className="bg-blue-200 w-fit p-4 rounded-md max-h-20 max-w-20">
+//                     <img className="max-w-[80%]" src={find} alt="" />
+//                   </div>
+//                   <div className="hittitle">Find Photographers</div>
+//                   <div className="hitdesc">
+//                     Search Our Nation Wide Marketplace Of Qualified Real Estate
+//                     Photographerscusing Our Ai Powered Capture And Editing
+//                     Solution.
+//                   </div>
+//                   <div className="hitcta flex items-center">
+//                     <div className="ctatext">Get Started</div>
+//                     <img className="ml-4 object-contain" src={arrow} alt="" />
+//                   </div>
+//                 </div>
+//                 <div className="findphototgraphercontainer">
+//                   <div className="bg-blue-200 w-fit p-4 rounded-md max-h-20 max-w-20">
+//                     <img className="max-w-[80%]" src={find} alt="" />
+//                   </div>
+//                   <div className="hittitle">Find Photographers</div>
+//                   <div className="hitdesc">
+//                     Search Our Nation Wide Marketplace Of Qualified Real Estate
+//                     Photographerscusing Our Ai Powered Capture And Editing
+//                     Solution.
+//                   </div>
+//                   <div className="hitcta flex items-center">
+//                     <div className="ctatext">Get Started</div>
+//                     <img className="ml-4 object-contain" src={arrow} alt="" />
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default HIT;
 import React from "react";
 import "./HIT.css";
 import hitmockup from "../../Assets/mokupHowItWork.png";
@@ -7,6 +93,34 @@ import hdr from "../../Assets/receivehdrphoto.png";
 import arrow from "../../Assets/arrow.png";
 import { motion } from "framer-motion";
 
+const HITSteps = [
+  {
+    title: "Find Photographers",
+    description:
+      "Search Our Nation Wide Marketplace Of Qualified Real Estate Photographers using Our Ai Powered Capture And Editing Solution.",
+    ctaText: "Get Started",
+    image: find,
+    arrow: arrow,
+  },
+  {
+    title: "Book Photographers",
+    description:
+      "Instantly Bok An Appoinment With Your Desired Photographer      ",
+    ctaText: "Get Started",
+    image: find,
+    arrow: arrow,
+  },
+  {
+    title: "Received HDR Photos    ",
+    description:
+      "With Our Fast, Efficient, Service, Photo Are Delivered On Site, Saving Time And Money While Showcasing The Property In The Best Possible Light      ",
+    ctaText: "Get Started",
+    image: find,
+    arrow: arrow,
+  },
+
+  // Add more steps as needed
+];
 const HIT = () => {
   return (
     <>
@@ -22,88 +136,36 @@ const HIT = () => {
             How It Works
           </motion.div>
         </div>
-        <div className="hitbottom flex flex-col  ">
-          <div className="flex contentcontainer">
-            <div className="leftmockup overflow-x-hidden">
-              <motion.img
-                initial={{ opacity: 0, x: -100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="leftmockupimg"
-                src={hitmockup}
-                alt=""
-              />
+        <div className="hitbottomcontainer flex">
+          <div className="layoutsetting">
+            <div className="left">
+              <img src={hitmockup} />
             </div>
-
-            <div className="righthit overflow-x-hidden">
-              <motion.div
-                initial={{ opacity: 0, x: 100 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="righthitone"
-              >
-                <div className="imgiconone">
-                  <img className="imgiconset" src={find} alt="" />
-                </div>
-                <div className="hittitle ani">Find Photographers</div>
-                <div className="hitdesc">
-                  Search our nation wide marketplace of qualified real estate
-                  photographerscusing our ai powered capture and editing
-                  solution.
-                </div>
-                <div className="hitcta flex mt-8 ">
-                  <div className="ctatext">Get Started</div>
-                  <img className="ml-4" src={arrow} alt="" />
-                </div>
-              </motion.div>
+            <div className="right mt-80">
+              <div className="content">
+                {HITSteps.map((step, index) => (
+                  <div key={index} className="findphototgraphercontainer">
+                    <div className="bg-blue-200 w-fit p-4 rounded-md max-h-20 max-w-20">
+                      <img
+                        className="max-w-[80%]"
+                        src={step.image}
+                        alt={step.title}
+                      />
+                    </div>
+                    <div className="hittitle">{step.title}</div>
+                    <div className="hitdesc">{step.description}</div>
+                    <div className="hitcta flex items-center mt-8">
+                      <div className="ctatext">{step.ctaText}</div>
+                      <img
+                        className="ml-4 object-contain"
+                        src={step.arrow}
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-
-          <div className="righthitsecond overflow-x-hidden">
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="righthitone"
-            >
-              <div className="imgicontwo">
-                <img className="imgiconset" src={book} alt="" />
-              </div>
-              <div className="hittitle">Book Photographers</div>
-              <div className="hitdesc">
-                Instantly bok an Appoinment with your desired photographer
-              </div>
-              <div className="hitcta flex mt-8 ">
-                <div className="ctatext">Get Started</div>
-                <img className="ml-4 object-contain" src={arrow} alt="" />
-              </div>
-            </motion.div>
-          </div>
-          <div className="righthitthird overflow-hidden">
-            <motion.div
-              initial={{ opacity: 0, x: 100 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="righthitone"
-            >
-              <div className="imgiconthree">
-                <img className="imgiconset" src={hdr} alt="" />
-              </div>
-              <div className="hittitle">Received HDR photos</div>
-              <div className="hitdesc">
-                With our fast, efficient, service, photo are delivered on site,
-                saving time and money while showcasing the property in the best
-                possible light
-              </div>
-              <div className="hitcta flex mt-8 ">
-                <div className="ctatext">Get Started</div>
-                <img className="ml-4 object-contain" src={arrow} alt="" />
-              </div>
-            </motion.div>
           </div>
         </div>
       </div>

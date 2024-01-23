@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Hero.css";
 import appstore from "../../Assets/App Store.png";
 import playstore from "../../Assets/Play Store.png";
