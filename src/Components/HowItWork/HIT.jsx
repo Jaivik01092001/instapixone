@@ -1,89 +1,3 @@
-// import React from "react";
-// import "./HIT.css";
-// import hitmockup from "../../Assets/mokupHowItWork.png";
-// import find from "../../Assets/findphotographer.png";
-// import book from "../../Assets/bookphotographer.png";
-// import hdr from "../../Assets/receivehdrphoto.png";
-// import arrow from "../../Assets/arrow.png";
-// import { motion } from "framer-motion";
-
-// const HIT = () => {
-//   return (
-//     <>
-//       <div className="hitcontainer" id="ourworks">
-//         <div className="overflow-x-hidden">
-//           <motion.div
-//             initial={{ opacity: 0, x: 100 }}
-//             whileInView={{ opacity: 1, x: 0 }}
-//             transition={{ duration: 1, ease: "easeOut" }}
-//             viewport={{ once: true }}
-//             className="hittop"
-//           >
-//             How It Works
-//           </motion.div>
-//         </div>
-//         <div className="hitbottomcontainer flex">
-//           <div className="layoutsetting">
-//             <div className="left">
-//               <img src={hitmockup} />
-//             </div>
-//             <div className="right mt-96">
-//               <div className="content">
-//                 <div className="findphototgraphercontainer">
-//                   <div className="bg-blue-200 w-fit p-4 rounded-md max-h-20 max-w-20">
-//                     <img className="max-w-[80%]" src={find} alt="" />
-//                   </div>
-//                   <div className="hittitle">Find Photographers</div>
-//                   <div className="hitdesc">
-//                     Search Our Nation Wide Marketplace Of Qualified Real Estate
-//                     Photographerscusing Our Ai Powered Capture And Editing
-//                     Solution.
-//                   </div>
-//                   <div className="hitcta flex items-center">
-//                     <div className="ctatext">Get Started</div>
-//                     <img className="ml-4 object-contain" src={arrow} alt="" />
-//                   </div>
-//                 </div>
-//                 <div className="findphototgraphercontainer">
-//                   <div className="bg-blue-200 w-fit p-4 rounded-md max-h-20 max-w-20">
-//                     <img className="max-w-[80%]" src={find} alt="" />
-//                   </div>
-//                   <div className="hittitle">Find Photographers</div>
-//                   <div className="hitdesc">
-//                     Search Our Nation Wide Marketplace Of Qualified Real Estate
-//                     Photographerscusing Our Ai Powered Capture And Editing
-//                     Solution.
-//                   </div>
-//                   <div className="hitcta flex items-center">
-//                     <div className="ctatext">Get Started</div>
-//                     <img className="ml-4 object-contain" src={arrow} alt="" />
-//                   </div>
-//                 </div>
-//                 <div className="findphototgraphercontainer">
-//                   <div className="bg-blue-200 w-fit p-4 rounded-md max-h-20 max-w-20">
-//                     <img className="max-w-[80%]" src={find} alt="" />
-//                   </div>
-//                   <div className="hittitle">Find Photographers</div>
-//                   <div className="hitdesc">
-//                     Search Our Nation Wide Marketplace Of Qualified Real Estate
-//                     Photographerscusing Our Ai Powered Capture And Editing
-//                     Solution.
-//                   </div>
-//                   <div className="hitcta flex items-center">
-//                     <div className="ctatext">Get Started</div>
-//                     <img className="ml-4 object-contain" src={arrow} alt="" />
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// export default HIT;
 import React from "react";
 import "./HIT.css";
 import hitmockup from "../../Assets/mokupHowItWork.png";
@@ -118,8 +32,6 @@ const HITSteps = [
     image: hdr,
     arrow: arrow,
   },
-
-  // Add more steps as needed
 ];
 const HIT = () => {
   return (
@@ -139,12 +51,12 @@ const HIT = () => {
         <div className="hitbottomcontainer flex">
           <div className="layoutsetting">
             <div className="left">
-              <img src={hitmockup} />
+              <img src={hitmockup} alt="" />
             </div>
             <div className="right mt-80">
               <div className="content">
                 {HITSteps.map((step, index) => (
-                  <div key={index} className="findphototgraphercontainer">
+                  <div key={index} className="findphototgraphercontainer mb-72">
                     <div className="bg-blue-200 w-fit p-4 rounded-md max-h-20 max-w-20">
                       <img
                         className="max-w-[80%]"

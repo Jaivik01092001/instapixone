@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./Hero.css";
 import appstore from "../../Assets/App Store.png";
 import playstore from "../../Assets/Play Store.png";
@@ -11,7 +11,6 @@ import firstiphone5 from "../../Assets/firstiphone5.svg";
 import { motion } from "framer-motion";
 import eclipseone from "../../Assets/eclipse/Ellipse-1.png";
 import eclipsetwo from "../../Assets/eclipse/Ellipse-2.png";
-// import eclipsethree from "../../Assets/eclipse/Ellipse.png";
 
 const Hero = () => {
   const animationVariants = {
@@ -20,7 +19,7 @@ const Hero = () => {
   };
 
   const animationOptions = {
-    duration: 1, // You can adjust the duration
+    duration: 1,
     ease: "linear",
     repeat: Infinity,
     repeatType: "reverse",
@@ -98,7 +97,6 @@ const Hero = () => {
           </div>
         </div>
         <div className="herobottom overflow-x-hidden">
-          {/* <img className="iphoneimg" src={iphone} alt="" /> */}
           <div className="mainherimgiphone flex">
             <motion.img
               initial={{ opacity: 0, x: -100 }}

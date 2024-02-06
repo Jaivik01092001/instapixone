@@ -135,6 +135,7 @@
   .findphototgraphercontainer {
     padding: 2rem 2rem;
     border-radius: 3rem;
+    margin-bottom: 0rem;
   }
   .findphototgraphercontainer:hover {
     padding: 2rem 2rem;
