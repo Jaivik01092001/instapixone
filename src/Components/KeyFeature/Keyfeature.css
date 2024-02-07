@@ -38,7 +38,7 @@
   /* color: var(--headingcolor); */
   text-transform: capitalize;
   background: linear-gradient(90deg, #ffffff, #a7a7a7);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .keyfeaturebottom {
@@ -67,7 +67,7 @@
   letter-spacing: 0em;
   text-align: center;
   background: linear-gradient(90deg, #ffffff, #b9e2ff);
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 .searchtitle {

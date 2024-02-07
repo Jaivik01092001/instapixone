@@ -15,7 +15,7 @@
     white,
     rgba(167, 167, 167, 1)
   ); /* Set the gradient from white to gray horizontally */
-  -webkit-background-clip: text; /* Clip the background to the text */
+  background-clip: text; /* Clip the background to the text */
   color: transparent;
   opacity: 1;
   transform: none;
