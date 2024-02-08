@@ -9,6 +9,7 @@ import LocomotiveScroll from "locomotive-scroll";
 // import "animate.css";
 
 function App() {
+  // eslint-disable-next-line no-unused-vars
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
